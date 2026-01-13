@@ -78,9 +78,6 @@
     <!-- Fondo Interactivo -->
     <canvas id="canvas-bg"></canvas>
 
-    <!-- Elemento llamativo central (Core) -->
-    <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 core-glow pointer-events-none opacity-20"></div>
-
     <!-- Contenido Principal -->
     <main class="relative z-10 max-w-4xl w-full text-center space-y-12">
         
@@ -231,7 +228,7 @@
         window.addEventListener('resize', initCanvas);
 
         // --- CONTADOR REGRESIVO ---
-        const countdownDate = new Date().getTime() + (90 * 24 * 60 * 60 * 1000); // 30 días desde ahora
+        const countdownDate = new Date('2026-04-13T00:00:00').getTime(); // 3 meses reales (Abril 2026)
 
         function updateCountdown() {
             const now = new Date().getTime();
